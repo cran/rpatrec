@@ -76,7 +76,7 @@ interpret(exp2)
 #dummy variable for n
 r <- 1
 #dummy variable for m
-s <- 5
+s <- 3
 
 ## ---- fig.show='hold'----------------------------------------------------
 a <- test.smoother(n=r,m=s,incr=0.5,max=50,smoother = kernel,bandwidth=1)
@@ -187,8 +187,8 @@ plot(d,type = "l", ylab="% of patterns recognised", xlab="noise", main="LOESS, s
 #detach(mtcars)
 
 ## ---- fig.show='hold'----------------------------------------------------
-a <- test.smoother(n=5,m=10,incr=0.5,max=50,smoother = kernel,ntype = "white", bandwidth=3)
-b <- test.smoother(n=5,m=10,incr=0.5,max=50,smoother = kernel,ntype = "red", bandwidth=3)
+a <- test.smoother(n=r,m=s,incr=0.5,max=50,smoother = kernel,ntype = "white", bandwidth=3)
+b <- test.smoother(n=r,m=s,incr=0.5,max=50,smoother = kernel,ntype = "red", bandwidth=3)
 
 #attach(mtcars)
 #par(mfrow=c(2,2))
